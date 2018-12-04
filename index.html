@@ -10,7 +10,6 @@
   
   
   <meta name="description" content="一个有节操的程序员">
-<meta name="keywords" content="周高">
 <meta property="og:type" content="website">
 <meta property="og:title" content="兕月">
 <meta property="og:url" content="http://yoursite.com/index.html">
@@ -113,7 +112,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/12/01/内涵段子/">内涵段子</a>
+      <a class="article-title" href="/2018/12/01/内涵段子/">软件工程</a>
     </h1>
   
 
@@ -130,7 +129,20 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <hr>
+<p>软件工程<br>IBM -&gt; DOS -&gt; Bill Gates -&gt;Microsoft -&gt;windows<br>软件开发流程/软件过程/软件生命周期<br>(1)软件定义期<br>  1、可行性研究阶段 – 《可行性研究报告》<br>     技术、人员、资金、时间、设备、政策法规、风俗、回报率。<br>  2、需求分析阶段 —《软件需求说明书》<br>     功能性需求、非功能需求<br>                (1)软件定义期<br>    (2)软件开发期<br>    3)概要设计阶段<br>    技术选型、功能模块设计、数据结构设计<br>    4)详细设计阶段<br>    模块实现细节、属性、方法、算法<br>    5)编码阶段<br>    UI设计师、前端工程师、后台工程师<br>    6)项目测试阶段<br>    (3)软件维护期<br>    7)项目部署阶段<br>    部署到服务器<br>    8)项目维护阶段<br>  3、“学子商城” 需求分析<br>     前台子系统<br>        产品模块：首页、列表、详情<br>    用户模块：注册、登录、收藏夹、用户中心<br>    购物车模块：添加购物车、修改购物车、下单<br>     后台子系统<br>        产品模块：添加、删除、列表、修改<br>    用户模块：删除、列表<br>    订单模块：列表、搜索<br>     移动端子系统(小程序、APP、网页)<br>    和前台子系统功能一致<br>  4、Web项目中的服务器<br>    Server：为客户端提供各种服务的功能强大的计算机。<br>    访问服务器·<br>    (1)服务器地址：域名/IP地址<br>    (2)对应服务的端口<br>    (3)提供该服务所使用的协议<br> 5、访问Web服务器上的网页<br>    确定已经启动了Web服务器 start.cmd<br>    <a href="http://localhost:80" target="_blank" rel="noopener">http://localhost:80</a><br>    <a href="http://127.0.0.1:80" target="_blank" rel="noopener">http://127.0.0.1:80</a><br>    获取自己电脑在局域网的IP地址<br>    运行-&gt;cmd-&gt;ipconfig 回车<br>    IPv4 地址 . . . . . . . . . . . . : 176.202.56.44<br>    子网掩码  . . . . . . . . . . . . : 255.255.255.0<br>    默认网关. . . . . . . . . . . . . : 176.202.56.1<br>    <a href="http://176.202.56.44:80" target="_blank" rel="noopener">http://176.202.56.44:80</a> 当前电脑在区域网的IP地址</p>
+<hr>
+<hr>
+<p>Mysql基础</p>
+<hr>
+<hr>
+<p>MYSQL数据库<br>  Orale分支：Mysql<br> Maritin分支：MariaDB<br>xampp 是一个服务器的套装，包含多款开源的服务器，例如Mysql、PHP……..<br> Mysql部署结构：<br>          服务器端软件：负责存储/维护数据—-银行总机房<br>         客户端：负责向服务器发起增删该查的命令—-ATM机<br>（1）服务器端：<br>C:\xampp\mysql\bin\mysql.exe 启动文件<br>C:\xampp\mysql\data 数据文件—-人无法看懂<br>（2）客户端：<br>C:\xampp\mysql\bin\nysql.exe 客户端软件<br>用来连接服务器端<br>（3）链接mysql服务器<br>       mysql.exe -h127.0.0.1 -P3306 -uroot -p<br> 简写： mysql -uroot<br>3、常用Mysql管理命令<br>quit；   退出服务器的连接<br>show databases； 显示服务器上当前所有的数据库<br>use 数据库名； 进入指定的数据库<br>show tables；显示当前数据库中所有的数据表<br>desc 表名称：    （描述表中有哪些列）<br>4、Mysql 常用的SQL命令<br>SQL：Structured Query Language，结构化查询语言。用于对关系型数据库服务器中的数据进行增删改查的操作<br> SQL语言最早是由IBM提出，后来提交给了ISO，最终成为了数据库行业的标准语言，分为SQL-87、SQL-92、SQL-99等<br>当前标准的SQL命令可以被大多数的关系型数据库所支持<br>SQl命令的两种执行方式<br>        （1）交互模式：客户端输入一行，点击回车，服务期执行一行。适用于临时性的查看数据。 mysql -uroot 回车<br>        （2）脚本模式：客户端把要执行的命令写在一个文本文件中，一次性的提交给服务器执行。适用于批量的增删改查。 mysql -uroot&lt;C:/xampp/…../0.1sql 回车</p>
+<p>SQL的语法规范<br>（1）每条SQL语句必须以英文的分号结尾，一条语句可以跨越多行见到分号认为SQL语句结束。<br>（2）若第n行语句有错误，则此语句以及后续的语句都不能在执行<br>（3）SQL命令不区分大小写，习惯上数据库关键字用大写，非关键字用小写。<br>（4）<br>SQL命令的代码不会被服务器执行。日常开发中常用的SQL命令<br>（1）丢弃指定的数据库，如果存在的话<br>DROP DATABASE IF EXISTS jd；<br>（2）创建新的数据库<br>CREATE DATABASE jd；<br>（3）进入刚刚创建的数据库<br>USE jd；<br>（4）创建保存数据的表<br>CREATE TABLE stundent(<br>    sid INT,<br>    name VARCHAR(8),<br>    sex VARCHAR(1),<br>    score INT<br>);</p>
+<p>#向学生表中插入数据<br>INSERT INTO student VALUES(‘1’,’Tom’,’M’,’72’);<br>INSERT INTO student VALUES(‘2’,’jerry’,’M’,’95’);<br>INSERT INTO student VALUES(‘3’,’fring’,’F’,’80’);<br>INSERT INTO student VALUES(‘4’,’drion’,’M’,’67’);</p>
+<p>#查询学生表中数据<br>select*from student;</p>
+<p>课后作业<br>创建脚本文件xz.sql,创建数据库写在，进入该数据库；<br>创建数据表 user， 包含 uid，uname，upwd，email，phone,sex,userName,registerTime,isOnline<br>插入5条数据，删除其中两条数据，修改2条数据，最后</p>
+<hr>
+
       
     </div>
     <footer class="entry-meta entry-footer">
@@ -301,7 +313,7 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2018/12/01/内涵段子/">内涵段子</a></h6>
+              <h6 style="margin: 0;"><a href="/2018/12/01/内涵段子/">软件工程</a></h6>
               <span>December 1, 2018</span>
             </div>
 
