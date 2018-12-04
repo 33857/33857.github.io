@@ -9,17 +9,17 @@
   
   
   
-  <meta name="description" content="MYSQL中的列类型创建数据表的时候，指定的列可以存储的数据类型。    CRETE TABLE book （bid 列类型）    1、数值类         TINYINT 微整形，占1个字节    范围-128~127         SMALLlNT 小整形，占2个字节     范围-32768~32767         INT  整形， 占4个字节     范围-2147483648">
+  <meta name="description" content="MYSQL中的列类型 创建数据表的时候，指定的列可以存储的数据类型。 CRETE TABLE book （bid 列类型） 1、数值类      TINYINT 微整形，占1个字节    范围-128~127      SMALLlNT 小整形，占2个字节     范围-32768~32767      INT  整形， 占4个字节     范围-2147483648~2147483647">
 <meta property="og:type" content="article">
 <meta property="og:title" content="软件工程">
 <meta property="og:url" content="http://yoursite.com/2018/12/01/内涵段子/index.html">
 <meta property="og:site_name" content="兕月">
-<meta property="og:description" content="MYSQL中的列类型创建数据表的时候，指定的列可以存储的数据类型。    CRETE TABLE book （bid 列类型）    1、数值类         TINYINT 微整形，占1个字节    范围-128~127         SMALLlNT 小整形，占2个字节     范围-32768~32767         INT  整形， 占4个字节     范围-2147483648">
+<meta property="og:description" content="MYSQL中的列类型 创建数据表的时候，指定的列可以存储的数据类型。 CRETE TABLE book （bid 列类型） 1、数值类      TINYINT 微整形，占1个字节    范围-128~127      SMALLlNT 小整形，占2个字节     范围-32768~32767      INT  整形， 占4个字节     范围-2147483648~2147483647">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-04T07:42:09.345Z">
+<meta property="og:updated_time" content="2018-12-04T11:42:33.497Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="软件工程">
-<meta name="twitter:description" content="MYSQL中的列类型创建数据表的时候，指定的列可以存储的数据类型。    CRETE TABLE book （bid 列类型）    1、数值类         TINYINT 微整形，占1个字节    范围-128~127         SMALLlNT 小整形，占2个字节     范围-32768~32767         INT  整形， 占4个字节     范围-2147483648">
+<meta name="twitter:description" content="MYSQL中的列类型 创建数据表的时候，指定的列可以存储的数据类型。 CRETE TABLE book （bid 列类型） 1、数值类      TINYINT 微整形，占1个字节    范围-128~127      SMALLlNT 小整形，占2个字节     范围-32768~32767      INT  整形， 占4个字节     范围-2147483648~2147483647">
   
     <link rel="alternate" href="/atom.xml" title="兕月" type="application/atom+xml">
   
@@ -133,8 +133,27 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>MYSQL中的列类型<br>创建数据表的时候，指定的列可以存储的数据类型。<br>    CRETE TABLE book （bid 列类型）<br>    1、数值类<br>         TINYINT 微整形，占1个字节    范围-128~127<br>         SMALLlNT 小整形，占2个字节     范围-32768~32767<br>         INT  整形， 占4个字节     范围-2147483648~2147483647<br>         BIGINT 大整形  占8个字节<br>         FLOAT 单精度浮点型，占4个字节， 范围3.4e38，范围比INT大得多，可能产生计算误差<br>         DOUBLE  双精度浮点型，占8个字节，范围比BIGINT大得多。<br>         DECIMAL（M,D）定点小数，不会产生计算误差，M代表总的有效位数，D代表小数点后有效位数<br>         BOOL    布尔型，只有两个结果TRUE/1、1/0 。<br>    2、日期类型<br>         DATE     日期型  ‘2018-12-13’<br>         TIME      时间型    ‘14:22:30’<br>         DATETIME   日期时间型  ‘2018-12-13  14:12:30’<br>    3、字符类型<br>         VARCHAR（M）  变长字符串<br>         CHAR（M）   定长字符串，可能产生空间浪费，<br>          操作熟读较快，M最大值为255；用于存储手机号码，身份证号等固定长度的字符</p>
-<pre><code>TEXT 大型变长字符，最多可以存2~4G
+<pre><code>MYSQL中的列类型
+创建数据表的时候，指定的列可以存储的数据类型。
+CRETE TABLE book （bid 列类型）
+1、数值类
+     TINYINT 微整形，占1个字节    范围-128~127
+     SMALLlNT 小整形，占2个字节     范围-32768~32767
+     INT  整形， 占4个字节     范围-2147483648~2147483647
+     BIGINT 大整形  占8个字节
+     FLOAT 单精度浮点型，占4个字节， 范围3.4e38，范围比INT大得多，可能产生计算误差
+     DOUBLE  双精度浮点型，占8个字节，范围比BIGINT大得多。
+     DECIMAL（M,D）定点小数，不会产生计算误差，M代表总的有效位数，D代表小数点后有效位数
+     BOOL    布尔型，只有两个结果TRUE/1、1/0 。
+2、日期类型
+     DATE     日期型  ‘2018-12-13’
+     TIME      时间型    ‘14:22:30’
+     DATETIME   日期时间型  ‘2018-12-13  14:12:30’
+3、字符类型
+     VARCHAR（M）  变长字符串
+     CHAR（M）   定长字符串，可能产生空间浪费，
+      操作熟读较快，M最大值为255；用于存储手机号码，身份证号等固定长度的字符
+     TEXT 大型变长字符，最多可以存2~4G
 </code></pre><hr>
 
       
@@ -178,7 +197,7 @@
   
     <a href="/2018/12/01/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">Hello World</div>
+      <div class="article-nav-title"></div>
     </a>
   
 </nav>

@@ -130,8 +130,27 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<p>MYSQL中的列类型<br>创建数据表的时候，指定的列可以存储的数据类型。<br>    CRETE TABLE book （bid 列类型）<br>    1、数值类<br>         TINYINT 微整形，占1个字节    范围-128~127<br>         SMALLlNT 小整形，占2个字节     范围-32768~32767<br>         INT  整形， 占4个字节     范围-2147483648~2147483647<br>         BIGINT 大整形  占8个字节<br>         FLOAT 单精度浮点型，占4个字节， 范围3.4e38，范围比INT大得多，可能产生计算误差<br>         DOUBLE  双精度浮点型，占8个字节，范围比BIGINT大得多。<br>         DECIMAL（M,D）定点小数，不会产生计算误差，M代表总的有效位数，D代表小数点后有效位数<br>         BOOL    布尔型，只有两个结果TRUE/1、1/0 。<br>    2、日期类型<br>         DATE     日期型  ‘2018-12-13’<br>         TIME      时间型    ‘14:22:30’<br>         DATETIME   日期时间型  ‘2018-12-13  14:12:30’<br>    3、字符类型<br>         VARCHAR（M）  变长字符串<br>         CHAR（M）   定长字符串，可能产生空间浪费，<br>          操作熟读较快，M最大值为255；用于存储手机号码，身份证号等固定长度的字符</p>
-<pre><code>TEXT 大型变长字符，最多可以存2~4G
+<pre><code>MYSQL中的列类型
+创建数据表的时候，指定的列可以存储的数据类型。
+CRETE TABLE book （bid 列类型）
+1、数值类
+     TINYINT 微整形，占1个字节    范围-128~127
+     SMALLlNT 小整形，占2个字节     范围-32768~32767
+     INT  整形， 占4个字节     范围-2147483648~2147483647
+     BIGINT 大整形  占8个字节
+     FLOAT 单精度浮点型，占4个字节， 范围3.4e38，范围比INT大得多，可能产生计算误差
+     DOUBLE  双精度浮点型，占8个字节，范围比BIGINT大得多。
+     DECIMAL（M,D）定点小数，不会产生计算误差，M代表总的有效位数，D代表小数点后有效位数
+     BOOL    布尔型，只有两个结果TRUE/1、1/0 。
+2、日期类型
+     DATE     日期型  ‘2018-12-13’
+     TIME      时间型    ‘14:22:30’
+     DATETIME   日期时间型  ‘2018-12-13  14:12:30’
+3、字符类型
+     VARCHAR（M）  变长字符串
+     CHAR（M）   定长字符串，可能产生空间浪费，
+      操作熟读较快，M最大值为255；用于存储手机号码，身份证号等固定长度的字符
+     TEXT 大型变长字符，最多可以存2~4G
 </code></pre><hr>
 
       
@@ -153,16 +172,6 @@
   <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
     
     
-      <header class="article-header">
-        
-  
-    <h1 class="thumb" itemprop="name">
-      <a class="article-title" href="/2018/12/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="article-meta">
       
 	<a href="/2018/12/01/hello-world/" class="article-date">
@@ -174,15 +183,115 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+        <hr>
+<h2 id="title-博客基础搭建"><a href="#title-博客基础搭建" class="headerlink" title="title:博客基础搭建"></a>title:博客基础搭建</h2><p>技术类博客搭建框架：hexo —&gt; 博客搭建工具—&gt; 代码相关的工具 ，压缩的、大量的、集成的代码包指令：使用框架的具体代码行、代码段hexo ：博客：技术相关git : 代码托管工具 —&gt; 全球通用(svn）代码托管工具：本地计算机—&gt;大型数据仓库—&gt;远程数据仓库：云(网易云、阿里云、新浪云、亚马逊云)技术论坛：w3c(适合现阶段)、简书、csdn、掘金、segmentfault…github.com:全球最大的开源社区注册邮箱：outlook.com126.com163.comhotmail.comsina.com打开一个记事本：邮箱：账号、密码账号：不要中文姓名全称、不要qq号、不要手机号gihub账号： 邮箱、<a href="http://www.github.comhtml" target="_blank" rel="noopener">www.github.comhtml</a> 、css 、javascript、node、 angular 、react、mysql 、php、echarts 、css3配置：git.exe 客户端网址：<a href="https://git-scm.com/c://用户/.ssh" target="_blank" rel="noopener">https://git-scm.com/c://用户/.ssh</a>  删除对本台电脑授权使用github账号：ssh-keygen    -t     rsa     -C     “自己的邮箱@xxx.com”c://用户/.ssh  rsa.pub —&gt;右键 editplus 打开ctrl + a ,ctrl + c 全选–复制github.com  个人中心 —&gt;settings  –&gt; ssh and gpg keys  —&gt;ctrl + v 粘贴git   config   –global user.name   “github 的用户名”git   config    –global user.email    “邮箱地址” ssh    -T     <a href="mailto:git@github.comhi" target="_blank" rel="noopener">git@github.comhi</a> nighthighness , you have  successfully  autheretical….推送操作：git基础操作：<br>git init    // 初始化一个git 仓库<br>echo “xxxx”&gt;&gt;1.txt  // 输出文字到1.txt<br>touch 2.txt        // 创建2.txt文档<br>echo “文档2” &gt;&gt;2.txt      //  输出文字到2.txt<br>cat 1.txt      //  读取文档内容<br>ls  // 查看当前文件夹下有哪些文件切回主分支<br>git checkout master查看已存在的分支git branch<br>练习：创建一个txt/html 输出一句话：learning git读取文件内容<br>①初次提交：提交本地新仓库(内容)到远程新仓库<br>git init    #初始化一个本地仓库  生成 .git 的文件<br>echo “111”&gt;&gt;1.txt   #输出文字到1.txt<br>git add 1.txt        #添加1.txt<br>git commit -m “提交注释”  #将文件提交到缓存区并加注释<br>git remote add origin <a href="mailto:git@github.comxxxxx" target="_blank" rel="noopener">git@github.comxxxxx</a>  #远程地址<br>git push -u origin master  #推动到远程端<br>②以后提交:<br>git add  2.txt<br>git commit -m “提交2.txt”<br>git push<br>cd   .. 返回上一级文件夹<br>cd  xxx 进入xxx文件夹<br>③拉取远程仓库<br>cd   .. 返回上一级 / cd 新的文件夹下（不能有.git 隐藏文件夹）<br>git clone xxxx   #(远程仓库的地址)分支工作流程：新建分支并切换到分支上工作<br>git  checkout -b  branch01<br>git add 5.txt<br>git commit -m “分支提交”<br>git push –set-upstream origin branch01</p>
+<hr>
+<hr>
+<p>下面有可以快速建立帖子的方法<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure></p>
+<p>More info: <a href="https://github.com/33857/33857.github.io" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<p>More info: <a href="https://github.com/33857/33857.github.io" target="_blank" rel="noopener">Server</a></p>
 <h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<p>More info: <a href="https://github.com/33857/33857.github.io" target="_blank" rel="noopener">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<p>More info: <a href="https://github.com/33857/33857.github.io" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-图画" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/11/27/图画/">图画</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/11/27/图画/" class="article-date">
+	  <time datetime="2018-11-27T08:21:56.000Z" itemprop="datePublished">November 27, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="我是小白一个"><a href="#我是小白一个" class="headerlink" title="我是小白一个"></a>我是小白一个</h3>
+
+
+
+
+<p><font color="blue">来个大神</font></p>
+<p><font color="red">教我点知识</font></p>
+<p><div style="color:blue">js的！</div></p>
+<p></p><h1 style="color:red">求教呀！</h1><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">js数据类型：</span><br><span class="line">	两种：原始数据类型</span><br><span class="line">	      引用数据类型</span><br><span class="line">这两种的区别在于那？</span><br></pre></td></tr></table></figure><p></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">seek help!</span><br></pre></td></tr></table></figure>
+<p>githud 新建库：<br>用户名.githud.io</p>
+
+      
+    </div>
+    <footer class="entry-meta entry-footer">
+      
+      
+  <span class="ico-tags"></span>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/博客/">博客</a></li></ul>
+
+      
+    </footer>
+    <hr class="entry-footer-hr">
+  </div>
+  
+</article>
+
+<!-- Table of Contents -->
+
+  
+    <article id="post-test" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div id="articleInner" class="clearfix post-1016 post type-post status-publish format-standard has-post-thumbnail hentry category-template-2 category-uncategorized tag-codex tag-edge-case tag-featured-image tag-image tag-template">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="thumb" itemprop="name">
+      <a class="article-title" href="/2018/11/27/test/">look</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      
+	<a href="/2018/11/27/test/" class="article-date">
+	  <time datetime="2018-11-27T03:09:08.000Z" itemprop="datePublished">November 27, 2018</time>
+	</a>
+
+       
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="博客求助"><a href="#博客求助" class="headerlink" title="博客求助"></a>博客求助</h4><p>fdagsagksfgfgf<br>fsdfsdfsd<br>bing搜索引擎传送门:<a href="http://maka.im/store/search/520" target="_blank" rel="noopener">苏</a></p>
 
       
     </div>
@@ -316,8 +425,32 @@
               <div class="widget-entry-summary" style="margin: 0;">
             
 
-              <h6 style="margin: 0;"><a href="/2018/12/01/hello-world/">Hello World</a></h6>
+              <h6 style="margin: 0;"><a href="/2018/12/01/hello-world/">(no title)</a></h6>
               <span>December 1, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/11/27/图画/">图画</a></h6>
+              <span>November 27, 2018</span>
+            </div>
+
+          </li>
+        
+          <li class="clearfix">
+
+            
+              <div class="widget-entry-summary" style="margin: 0;">
+            
+
+              <h6 style="margin: 0;"><a href="/2018/11/27/test/">look</a></h6>
+              <span>November 27, 2018</span>
             </div>
 
           </li>
@@ -331,16 +464,30 @@
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/博客/">博客</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">标签云</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/git/" style="font-size: 10px;">git</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/博客/" style="font-size: 10px;">博客</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">归档</h3>
 
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">2</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/12/">December 2018</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/11/">November 2018</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
